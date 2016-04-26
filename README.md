@@ -5,13 +5,17 @@
 ## Install 
 
 ```
-	$sudo npm install --save packages-by
+	$ npm install --save packages-by
 ```
 
 ## Usage
 
 ```js
-	const packagesBy('rishi').then(user => {
+	'use strict';
+
+	const packagesBy = require('./index.js');
+
+	packagesBy('rishi').then(user => {
 		console.log(user);
 		/*
 		name: 'rishi',
@@ -27,3 +31,4 @@
 ## LICENSE
 
 MIT &copy; [Rishi Giri](http://rishigiri.com)
+
