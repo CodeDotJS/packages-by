@@ -19,7 +19,7 @@ module.exports = function (username) {
 		return {
 			name: $('.fullname').text() || null,
 
-			packages: $('#packages').text().replace(/ /g, '').replace('Packagesby', '').replace('\n', '').replace('\n', '').replace(username, '') || null
+			packages: $('#packages').text().replace(/ /g, '').replace('Packagesby', '').replace('\n', '').replace('\n', '').replace(username, '') + ' Packages' || null
 		};
 	}).catch(function (err) {
 		if (err.statusCode === 404) {
