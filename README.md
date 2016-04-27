@@ -2,6 +2,8 @@
 
 > Total published packages by an npm user.
 
+[![Build Status](https://travis-ci.org/CodeDotJS/packages-by.svg?branch=master)](https://travis-ci.org/CodeDotJS/packages-by)
+
 ## Install 
 
 ```
