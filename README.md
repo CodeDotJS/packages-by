@@ -11,9 +11,8 @@
 ## Usage
 
 ```js
-	'use strict';
 
-	const packagesBy = require('./index.js');
+	const packagesBy = require('packages-by');
 
 	packagesBy('rishi').then(user => {
 		console.log(user);
