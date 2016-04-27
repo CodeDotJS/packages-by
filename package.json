@@ -1,0 +1,53 @@
+{
+  "name": "packages-by",
+  "version": "1.0.0",
+  "description": "Total packages published by a npm user.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codedotjs/packages-by.git"
+  },
+  "author": "Rishi Giri <rushforlinux@gmail.com> (rishigiri.com)",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "twitter",
+    "tweet",
+    "information",
+    "info",
+    "tweets",
+    "following",
+    "followers",
+    "likes",
+    "name",
+    "handle",
+    "bio",
+    "born",
+    "place",
+    "website",
+    "joined",
+    "info",
+    "profile"
+  ],
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "got": "^5.0.0",
+    "pinkie-promise": "^2.0.0"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "xo": "*"
+  },
+  "bugs": {
+    "url": "https://github.com/codedotjs/packages-by/issues"
+  },
+  "homepage": "https://github.com/codedotjs/packages-by#readme",
+  "main": "index.js"
+}
