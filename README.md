@@ -16,11 +16,11 @@
 
 	const packagesBy = require('packages-by');
 
-	packagesBy('rishi').then(user => {
+	packagesBy('feross').then(user => {
 		console.log(user);
 		/*
-		name: 'rishi',
-		totalPackages: 10
+		name: 'Feross Aboukhadijeh',
+		totalPackages: '125 Packages'
 		*/
 	});
 ```
