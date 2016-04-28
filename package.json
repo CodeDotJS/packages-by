@@ -18,23 +18,11 @@
     "index.js"
   ],
   "keywords": [
-    "twitter",
-    "tweet",
-    "information",
-    "info",
-    "tweets",
-    "following",
-    "followers",
-    "likes",
-    "name",
-    "handle",
-    "bio",
-    "born",
-    "place",
-    "website",
-    "joined",
-    "info",
-    "profile"
+    "npm",
+    "npm-user",
+    "packages",
+    "total-packages",
+    "information"
   ],
   "dependencies": {
     "cheerio": "^0.19.0",
