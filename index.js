@@ -25,7 +25,7 @@ module.exports = function (username) {
 		};
 	}).catch(function (err) {
 		if (err.statusCode === 404) {
-			err.message = 'Not a Twitter User.';
+			err.message = 'Not an NPM User.';
 		}
 
 		throw err;
