@@ -9,7 +9,7 @@
   },
   "author": "Rishi Giri <rushforlinux@gmail.com> (rishigiri.com)",
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4"
   },
   "scripts": {
     "test": "xo && ava"
@@ -26,8 +26,7 @@
   ],
   "dependencies": {
     "cheerio": "^0.19.0",
-    "got": "^5.0.0",
-    "pinkie-promise": "^2.0.0"
+    "got": "^5.0.0"
   },
   "devDependencies": {
     "ava": "*",

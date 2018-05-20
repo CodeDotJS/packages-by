@@ -1,33 +1,32 @@
-# packages-by
+<h1 align="center">
+	P A C K A G E S - B Y
+	<br>
+	<a href="https://travis-ci.org/CodeDotJS/packages-by"><img src="https://travis-ci.org/CodeDotJS/packages-by.svg?branch=master"></a>
+	<br>
+</h1>
 
-> Total published packages by an npm user.
+<p align="center"> Total packages published by a npm user!</p>
 
-[![Build Status](https://travis-ci.org/CodeDotJS/packages-by.svg?branch=master)](https://travis-ci.org/CodeDotJS/packages-by)
-
-## Install 
+## Install
 
 ```
-	$ npm install --save packages-by
+$ npm install --save packages-by
 ```
 
 ## Usage
 
 ```js
+const pkgby = require('packages-by');
 
-	const packagesBy = require('packages-by');
-
-	packagesBy('feross').then(user => {
-		console.log(user);
-		/*
-		name: 'Feross Aboukhadijeh',
-		totalPackages: '125 Packages'
-		*/
-	});
+pkgby('rishi').then(res => {
+  console.log(res);
+  // { count: '78' }
+});
 ```
 
 ## Related
 
-- [twifo](https://github.com/codedotjs/twifo) : Get user information of a Twitter user.
+- __[`packages-by-cli`](https://github.com/CodeDotJS/packages-by-cli)__ `:` `Command line tool to find total packages published by a npm user`
 
 ## LICENSE
 
