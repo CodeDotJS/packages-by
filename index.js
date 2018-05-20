@@ -1,33 +1,21 @@
-#!/usr/bin/env node
-
 'use strict';
 
-var cheerio = require('cheerio');
+const got = require('got');
+const cheerio = require('cheerio');
 
-var Promise = require('pinkie-promise');
+module.exports = username => {
+	const url = `https://npmjs.com/~${username}`;
 
-var got = require('got');
-
-module.exports = function (username) {
-	if (typeof username !== 'string') {
-		return Promise.reject(new Error('username required'));
-	}
-
-	var url = 'https://npmjs.com/~' + username;
-
-	return got(url).then(function (res) {
-		var $ = cheerio.load(res.body);
+	return got(url).then(res => {
+		const $ = cheerio.load(res.body);
 
 		return {
-			name: $('.fullname').text() || null,
-
-			packages: $('#packages').text().replace(/ /g, '').replace('Packagesby', '').replace('\n', '').replace('\n', '').replace(username, '') + ' Packages' || null
+			count: $('.ph1').text().trim()
 		};
-	}).catch(function (err) {
-		if (err.statusCode === 404) {
-			err.message = 'Not an NPM User.';
+	}).catch(err => {
+		if (err) {
+			err.message = `${username} is not a npm user`;
 		}
-
-		throw err;
+		return err.message;
 	});
 };
